@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E0E7E9;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .register {
+            background-color: #fff;
+            padding: 30px 70px 0px 70px;
+            box-shadow: 0 4px 15px #A3C6C4;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            height: 650px;
+        }
+
+        h1 {
+            color: #6C7A89;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #6C7A89;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #354649;
+        }
+
+        a{
+            color: #354649;
+        }
+    </style>
+</head>
+<body>
+<div class="register">
+    <h1>Register</h1>
+    <form action="registration.php" method="post" autocomplete="off">
+        <label for="nume">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="nume" placeholder="Nume" id="nume" required>
+
+        <label for="prenume">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="prenume" placeholder="Prenume" id="prenume" required>
+
+        <label for="username">
+            <i class="fas fa-user"></i>
+        </label>
+        <input type="text" name="username" placeholder="Username" id="username" required>
+
+        <label for="password">
+            <i class="fas fa-lock"></i>
+        </label>
+        <input type="password" name="password" placeholder="Parola" id="password" required>
+
+        <label for="email">
+            <i class="fas fa-envelope"></i>
+        </label>
+        <input type="email" name="email" placeholder="Email" id="email" required>
+
+        <label for="nr_telefon">
+            <i class="fas fa-phone"></i>
+        </label>
+        <input type="text" name="nr_telefon" placeholder="Nr. de telefon" id="nr_telefon" required>
+
+        <input type="submit" value="Register">
+    </form>
+    <div>
+        Ai deja un cont? <a href="index.html">Autentifica-te</a>
+    </div>
+</div>
+</body>
+</html>
